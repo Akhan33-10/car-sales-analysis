@@ -132,7 +132,13 @@ car-sales-analysis/
    White Honda/Kia SUV, Excellent condition,
    20K-50K miles, sold in March or June
 
----
+## 📸 Dashboard Screenshots
+
+### Page 1 — Overview
+![Overview](dashboard_overview.png)
+
+### Page 2 — Deep Analysis
+![Deep Analysis](dashboard_deep_analysis.png)
 
 ## 🚀 How To Run
 

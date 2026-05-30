@@ -58,7 +58,7 @@ car-sales-analysis/
 - Monthly sales trend analysis
 - Window functions for ranking
 - Data quality checks (duplicate VINs)
-
+- Month Over Month (MOM) growth using CTE + LAG
 ---
 
 ## 📊 Power BI Dashboard

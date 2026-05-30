@@ -206,3 +206,26 @@ WHERE color != 'Unknown'
 GROUP BY color
 HAVING COUNT(*) >= 100
 ORDER BY total_sold DESC;
+
+-- ── ADVANCED ANALYSIS ──────────────────
+
+-- Q18: Month Over Month (MOM) Growth Analysis
+-- Uses CTE + LAG Window Function
+WITH A AS (
+    SELECT month, 
+           SUM(selling_price) AS sales 
+    FROM car_sales 
+    GROUP BY month
+)
+SELECT *,
+       ROUND(((sales - prev_month) / prev_month * 100), 2) AS MOM_growth_pct
+FROM (
+    SELECT *, 
+           LAG(sales, 1) OVER (ORDER BY month) AS prev_month 
+    FROM A
+) B;
+
+-- Results show:
+-- Biggest drop  → September (-2.59%)
+-- Biggest growth → October (+1.35%)
+-- Pattern: Sales follow wave pattern throughout year

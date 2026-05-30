@@ -135,10 +135,10 @@ car-sales-analysis/
 ## 📸 Dashboard Screenshots
 
 ### Page 1 — Overview
-![Overview](dashboard_overview.png)
+![Overview](car%20sales%20dashboard.png)
 
 ### Page 2 — Deep Analysis
-![Deep Analysis](dashboard_deep_analysis.png)
+![Deep Analysis](car%20sales%20dashboard%202.png)
 
 ## 🚀 How To Run
 
